@@ -9,6 +9,6 @@
     <string name="name">Name</string>
     <string name="surname">Surname</string>
     <string name="login">LOGIN</string>
-    <string name="welcome">Welcome!</string>
+    <string name="welcome">Bus Unab!</string>
     <string name="where_are_the_buses">Where are the buses?</string>
 </resources>
