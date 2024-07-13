@@ -1,5 +1,6 @@
 package software.mys.fabiansuarez.busunabapp
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,15 +15,50 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.constraintlayout.compose.ConstraintLayout
 import software.mys.fabiansuarez.busunabapp.ui.theme.BusUnabAppTheme
 import software.mys.fabiansuarez.busunabapp.ui.theme.Typography
 
 @Preview
+@Composable
+fun LoginScreenSebastian() {
+    HeaderLogin()
+    BodyLogin()
+    FooterLogin()
+}
+
+@Composable
+fun HeaderLogin() {
+    ConstraintLayout() {
+        var (imgLogin, txtLogin) = createRefs()
+        Image(
+            painter = painterResource(id = R.drawable.ic_launcher_background),
+            contentDescription = null,
+            modifier = Modifier.constrainAs(imgLogin){
+
+            }
+        )
+        Text(text = "Iniciar Sesión")
+    }
+}
+
+@Composable
+fun BodyLogin() {
+
+}
+
+@Composable
+fun FooterLogin() {
+
+}
+
+
 @Composable
 fun PreviewLogin() {
     BusUnabAppTheme {

@@ -37,6 +37,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {
@@ -66,4 +67,11 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //Google Maps
+    implementation(libs.maps.compose)
+    //lContraintsLayout Compose
+    implementation(libs.androidx.constraintlayout.compose)
+    //Coil: Cargar imagenes
+    implementation(libs.coil.compose)
 }
